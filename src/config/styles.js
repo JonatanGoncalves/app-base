@@ -6,8 +6,21 @@ export const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: 'lightsteelblue'
       },
       container_inner: {
-        padding: 20,
+        padding: 40,
+        borderRadius: 10,
+        borderWidth: 4,
+        backgroundColor : "#FFF"
       },
+      alinhamento: {
+        textAlign: 'center'
+      },
+      container_home: {
+        padding: 40,
+        borderRadius: 10,
+        borderWidth: 4,
+        backgroundColor : "#FFF"
+      }
 });
