@@ -95,7 +95,7 @@ export default function CadastroScreen() {
                 <Button
                 onPress={() =>
                     navigation.navigate('LoginScreen', { name: 'LoginScreen' })}
-                mode={"text"}>Já Possui uma Conta? - Logar</Button>
+                mode={"text"}>Cadastrado 👉 Logar</Button>
                 <Text>{"\n"}</Text>
                 <Text>Obs.: Você é um Admin use a conta de Admin com uma senha fácil de 3 digitos.</Text>
             </View>

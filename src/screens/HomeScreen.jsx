@@ -2,25 +2,13 @@ import { Button, Text, View } from "react-native";
 import { styles } from "../config/styles";
 
 
-export default function HomeScreen({ navigation }) {
+export default function HomeScreen() {
     return (
         <View style={styles.container}>
             <View style={styles.container_home}>
-                <Text>Tela de HomeScreen 💗💗💗</Text>
+                <Text style={styles.alinhamento}>Bem-Vindo Ao meu App</Text>
                 <Text>{"\n"}</Text>
-                <Button
-                    title='Ir Para a Tela Sobre'
-                    onPress={() =>
-                        navigation.navigate('SobreScreen', { name: 'SobreScreen' })}
-                />
-                <Text>{"\n"}</Text>
-                <Text>Tela de Login</Text>
-                <Text>{"\n"}</Text>
-                <Button
-                    title='Ir Para a Tela de Login'
-                    onPress={() =>
-                        navigation.navigate('LoginScreen', { name: 'LoginScreen' })}
-                />
+                <Text>Essa é a Tela de HomeScreen 💗💗💗</Text>
             </View>
         </View>
     )
