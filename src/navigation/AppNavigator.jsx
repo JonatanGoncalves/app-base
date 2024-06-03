@@ -39,26 +39,32 @@ export default function AppNavigator() {
                                     width: 230,
                                 }
                             }}
-                        >
-                            <Drawer.Screen 
-                                name='Home'
-                                component={HomeScreen}
-                                options={{ drawerIcon: HomeIcon }}
-                            />
+                            >
                             <Drawer.Screen 
                                 name='LoginScreen'
                                 component={LoginScreen}
-                                options={{ drawerIcon: LoginIcon }}
+                                options={{ 
+                                    headerShown: false,
+                                    drawerIcon: LoginIcon }}
                             />
+                                <Drawer.Screen 
+                                    name='RegisterScreen'
+                                    component={RegisterScreen}
+                                    options={{ 
+                                        headerShown: false,
+                                        drawerIcon: RegisterIcon }}
+                                />
                             <Drawer.Screen 
-                                name='RegisterScreen'
-                                component={RegisterScreen}
-                                options={{ drawerIcon: RegisterIcon }}
+                                name='Home'
+                                component={HomeScreen}
+                                options={{ 
+                                    drawerIcon: HomeIcon }}
                             />
                             <Drawer.Screen 
                                 name="SobreScreen"
                                 component={SobreScreen}
-                                options={{ drawerIcon: SobreIcon}}
+                                options={{ 
+                                    drawerIcon: SobreIcon}}
                             />
                         </Drawer.Navigator>
                     )}
