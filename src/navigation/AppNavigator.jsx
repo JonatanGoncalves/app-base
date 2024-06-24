@@ -3,7 +3,6 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Ionicons } from "@expo/vector-icons";
 import HomeScreen from "../screens/HomeScreen";
-import SobreScreen from "../screens/SobreScreen";
 import LoginScreen from "../screens/LoginScreen";
 import RegisterScreen from "../screens/RegisterScreen";
 
@@ -12,10 +11,6 @@ const Stack = createNativeStackNavigator();
 
 const HomeIcon = ({ focused, color, size }) => (
     <Ionicons name="home" size={size} color={color} />
-);
-
-const SobreIcon = ({ focused, color, size }) => (
-    <Ionicons name="help" size={size} color={color} />
 );
 
 const LoginIcon = ({ focused, color, size }) => (
@@ -57,14 +52,9 @@ export default function AppNavigator() {
                             <Drawer.Screen 
                                 name='Home'
                                 component={HomeScreen}
-                                options={{ 
+                                options={{
+                                    headerTintColor: "#8A2BE2", 
                                     drawerIcon: HomeIcon }}
-                            />
-                            <Drawer.Screen 
-                                name="SobreScreen"
-                                component={SobreScreen}
-                                options={{ 
-                                    drawerIcon: SobreIcon}}
                             />
                         </Drawer.Navigator>
                     )}
